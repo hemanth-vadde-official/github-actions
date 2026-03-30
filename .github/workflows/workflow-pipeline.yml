@@ -25,5 +25,21 @@ jobs:
           echo " Hello I am Heamnth Vadde"
           echo " Cloud & DevOps Engineer"
           sleep 20
+
+  job3:
+    name: Job3
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job with single Dependency
+        run: sleep 10
+
+  job4:
+    name: Job4
+    needs: [job2, job3, job1]
+    runs-on: ubuntu-latest
+    steps:
+      - name : Job For Multiple Dependencies
+        run : sleep10
         
     
