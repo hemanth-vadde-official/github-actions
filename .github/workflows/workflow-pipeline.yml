@@ -1,0 +1,3 @@
+name: GitHub Actions
+# To get a trigger on every push in this repo
+on: push
