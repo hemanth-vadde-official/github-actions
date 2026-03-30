@@ -4,10 +4,26 @@ on: push
 
 jobs:
   job1:
-    name: githubactionworkflow
+    name: Job1
     runs-on: ubuntu-latest
     steps: 
       - name: Running Single Command in githubactions
         run : echo " Hello thus is my first githubaction workflow"
       - name : checking OS release for my github action hosted runner
         run : cat /etc/os-release
+      - name : calling sleep
+        run: sleep 20
+         
+  job2:
+    name: Job2
+    runs-on: ubuntu-latest
+    steps:
+      - name: checking the host name for runner
+        run: hostname
+      - name: Running Multiple steps 
+        run: |
+          echo " Hello I am Heamnth Vadde"
+          echo " Cloud & DevOps Engineer"
+          sleep 20
+        
+    
