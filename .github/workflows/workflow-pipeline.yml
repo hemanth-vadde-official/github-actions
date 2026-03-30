@@ -40,6 +40,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : Job For Multiple Dependencies
-        run : sleep10
+        run : sleep 40
         
     
