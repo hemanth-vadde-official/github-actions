@@ -4,8 +4,8 @@ on: push
 
 jobs:
   job1:
-    name:githubactions
-    runs-on:ubuntu-latest
+    name: githubactionworkflow
+    runs-on: ubuntu-latest
     steps: 
       - name: Running Single Command in githubactions
         run : echo " Hello thus is my first githubaction workflow"
