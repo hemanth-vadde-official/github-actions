@@ -1,3 +1,13 @@
 name: GitHub Actions
-# To get a trigger on every push in this repo
+# To get a trigger on every push in this repo in any branch
 on: push
+
+jobs:
+  job1:
+    name:githubactions
+    runs-on:ubuntu-latest
+    steps: 
+      - name: Running Single Command in githubactions
+        run : echo " Hello thus is my first githubaction workflow"
+      - name : checking OS release for my github action hosted runner
+        run : cat /etc/os-release
